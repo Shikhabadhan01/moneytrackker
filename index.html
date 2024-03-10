@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Tracker App</h1>
+        <div class="form-container">
+            <form id="expenseForm">
+                <h2>Add Expense</h2>
+                <div class="form-group">
+                    <label for="expenseName">Expense Name:</label>
+                    <input type="text" id="expenseName" name="expenseName" required>
+                </div>
+                <div class="form-group">
+                    <label for="expenseAmount">Amount:</label>
+                    <input type="number" id="expenseAmount" name="expenseAmount" required>
+                </div>
+                <button type="submit">Add Expense</button>
+            </form>
+            <form id="incomeForm">
+                <h2>Add Income</h2>
+                <div class="form-group">
+                    <label for="incomeName">Income Source:</label>
+                    <input type="text" id="incomeName" name="incomeName" required>
+                </div>
+                <div class="form-group">
+                    <label for="incomeAmount">Amount:</label>
+                    <input type="number" id="incomeAmount" name="incomeAmount" required>
+                </div>
+                <button type="submit">Add Income</button>
+            </form>
+        </div>
+        <div id="expensesList">
+            <h2>Expenses</h2>
+            <!-- Expense items will be displayed here -->
+        </div>
+        <div id="incomesList">
+            <h2>Incomes</h2>
+            <!-- Income items will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
